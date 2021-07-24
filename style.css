@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    align-items: center!important;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-1 {
+    float: left;
+    padding-left: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.navbar-2 {
+    float: right;
+    padding-right: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
