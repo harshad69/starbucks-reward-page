@@ -11,6 +11,10 @@ body {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 30px;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-1 {
@@ -20,6 +24,7 @@ body {
     align-items: center;
     background-color: white;
     color: black;
+    margin: 0;
 }
 
 .navbar-1 > li {
@@ -31,7 +36,7 @@ body {
     list-style-type: none;
     justify-content: flex-end;
     align-items: center;
-    margin: 20px;
+    margin: 0;
 }
 
 .navbar-2 > li {
@@ -68,5 +73,20 @@ li  a {
 }
 
 .starbuck_rewards_div {
+    background-color: rgb(5,78,89);
+    color: white;
     padding: 10px;
+    text-align: center;
+    position: sticky;
+}
+
+.hero_image {
+    width: 100%;
+    height: auto;
+}
+
+.text_on_hero_image {
+    position: absolute;
+    top: 50%;
+    right: 40%;
 }
