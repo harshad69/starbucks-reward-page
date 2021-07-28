@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-}
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;}
 
-.container {
+.container-1, .container-2 {
     display: grid;
     text-decoration: none;
 }
@@ -25,10 +25,15 @@ body {
     background-color: white;
     color: black;
     margin: 0;
+    font-weight: 700!important;
 }
 
 .navbar-1 > li {
     padding: 10px;
+}
+
+.nav_hover > a:hover {
+    color: rgb(5,78,89);
 }
 
 .navbar-2 {
@@ -36,6 +41,7 @@ body {
     list-style-type: none;
     justify-content: flex-end;
     align-items: center;
+    align-content: center;
     margin: 0;
 }
 
@@ -48,23 +54,31 @@ li  a {
     text-decoration: none;
 }
 
-.hero_image {
-    width: 200px;
+.find_a_store:hover {
+    color: rgb(5,78,89);
 }
 
 .sign_in_btn {
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 8px 15px;
     background-color: white;
     border: 1.5px solid black;
 }
 
+.sign_in_btn:hover {
+    background-color: whitesmoke;
+}
+
 .join_now_btn-1 {
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 8px 15px;
     background-color: black;
     color: white;
     border: 1px solid black;
+}
+
+.join_now_btn-1:hover {
+    background-color: rgb(56, 47, 47);
 }
 
 .active {
@@ -78,15 +92,60 @@ li  a {
     padding: 10px;
     text-align: center;
     position: sticky;
+    top: 110px;
 }
 
 .hero_image {
     width: 100%;
-    height: auto;
+    height: 80%;
 }
 
 .text_on_hero_image {
     position: absolute;
     top: 50%;
-    right: 40%;
+    margin: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.hero_img_heading {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.join_now_btn-2 {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.para_of_join_app > a {
+    color: white;
+}
+
+.para_of_join_app > a:hover {
+text-decoration: none;
+}
+
+.getting_started_div {
+    /* padding-left: 30%; */
+    text-align: center;
+}
+
+.getting_started_div > h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.steps_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.number_img {
+    width: 30px;
 }

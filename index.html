@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Starbucks rewards</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-1">
         <nav class="navbar">
             <ul class="navbar-1">
-                <span class="material-icons">stars</span>
-                <li><a href="#">MENU</a></li>
-                <li class="active"><a href="#">REWARDS</a></li>
-                <li><a href="#">GIFT CARDS</a></li>
+                <li><a href="#"><span class="material-icons">stars</span></a></li>
+                <li class="nav_hover"><a href="#">MENU</a></li>
+                <li class="active nav_hover"><a href="#">REWARDS</a></li>
+                <li class="nav_hover"><a href="#">GIFT CARDS</a></li>
             </ul>
             <ul class="navbar-2">
-                <span class="material-icons">location_on</span>
-                <li>Find a store</li>
+                <li class="find_a_store">
+                    <span class="material-icons">location_on</span>
+                    <a href="#">Find a store</a>
+                </li>
                 <li><button class="sign_in_btn">Sign in</button></li>
                 <li><button class="join_now_btn-1">Join now</button></li>
             </ul>
@@ -29,17 +33,45 @@
             <img class="hero_image" src="images/hero_image.jpg" alt="hero_image">
             <div class="text_on_hero_image">
                 <div>
-                    <h2>More ways to pay. More ways to get rewarded</h2>
-                    <p>As a Starbucks Rewards member, you'll earn free food and drinks whether you pay with cash, credit card or gift card. <a href="#">Terms of use</a></p>
+                    <h2 class="hero_img_heading">Free coffee <br> is a tap away</h2>
+                    <p>Join now to start earning rewards</p>
                 </div>
                 <div>
-                    <button>Join now</button>
+                    <button class="join_now_btn-2">Join now</button>
                 </div>
                 <div>
-                    <a href="#">Or join in the app</a> for the best experience
+                    <p class="para_of_join_app">Or <a href="#">join in the app</a> for the best experience</p>
                 </div>
-            </div>                                      
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="getting_started_div">
+            <h3>Getting started is easy</h3>
+            <p>Earn Stars and get rewarded in few easy steps</p>
+        </div>
+        <div class="steps_div">
+            <div>
+                <img class="number_img" src="images/number-one-in-a-circle.png" alt="number 1">
+                <h4>Create an account</h4>
+                <p>To get started, <a href="#"></a> join now. You can also join in the app to get access
+                     to the full range of Starbucks®
+                    Rewards benefits.</p>
+            </div>
+            <div>
+                <img class="number_img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/NumberTwoInCircle.svg" alt="number 2">
+                <h4>Order and pay how you’d like</h4>
+                <p>Use cash, credit/debit card or save some time and pay right through the app. 
+                    You’ll collect Stars all ways. Learn how</p>
+            </div>
+            <div>
+                <img class="number_img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/3NumberThreeInCircle.svg" alt="number 3">
+                <h4>Earn Stars, get Rewards</h4>
+                <p>As you earn Stars, you can redeem them for Rewards—like 
+                    free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
