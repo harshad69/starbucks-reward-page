@@ -23,6 +23,7 @@ body {
 }
 
 .navbar-1 {
+    letter-spacing: 1.4px;
     list-style-type: none;  
     display: flex;
     justify-content: flex-start;
@@ -31,6 +32,7 @@ body {
     color: black;
     margin: 0;
     font-weight: 700!important;
+    font-size: 14px;
 }
 
 .navbar-1 > li {
@@ -48,6 +50,7 @@ body {
     align-items: center;
     align-content: center;
     margin: 0;
+    font-size: 14px;
 }
 
 .navbar-2 > a {
@@ -74,6 +77,7 @@ li  a {
     border-radius: 20px;
     padding: 8px 15px;
     background-color: white;
+    font-size: 14px;
     border: 1.5px solid black;
 }
 
@@ -82,6 +86,7 @@ li  a {
 }
 
 .join_now_btn-1 {
+    font-size: 14px;
     border-radius: 20px;
     padding: 8px 15px;
     background-color: black;
@@ -99,11 +104,13 @@ li  a {
 }
 
 .starbuck_rewards_div {
+    letter-spacing: 1.4px;
     background-color: rgb(5,78,89);
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     position: sticky;
+    font-size: 14px;
     top: 110px;
 }
 
@@ -124,7 +131,7 @@ li  a {
 
 .hero_img_heading {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .join_now_btn-2 {
@@ -177,4 +184,47 @@ text-decoration: none;
 
 .blue_link:hover {
     text-decoration: none;
+}
+
+.container-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.get_fav_div {
+    display: grid;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(241,248,246);
+}
+
+.get_fav_div > h4 {
+    margin: 30px 15px 0 15px;
+    padding: 5px 0 50px 0;
+    font-weight: 600;
+    letter-spacing: -0.16px;
+    font-size: 28px;
+}
+
+.price_div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.price_div > p {
+    padding: 0 15px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.custome_div {
+    background-color: rgb(212,233,226);
+}
+
+.star {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb( 203, 162, 88);
 }
