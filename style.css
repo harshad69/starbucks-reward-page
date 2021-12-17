@@ -13,14 +13,26 @@ body {
     text-decoration: none;
 }
 
-.navbar {
+.sticky {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.sticky {
+    padding-top: 100px;
+}
+
+
+/* .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
     padding: 44px;
     position: sticky;
     top: 0;
-}
+} */
 
 .navbar-1 {
     letter-spacing: 1.4px;
