@@ -114,3 +114,46 @@ li.active a::before, #elehover:hover::before {
     background-color: white;
     color: black;
 }
+
+.container-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.get_fav_div {
+    display: grid;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(241,248,246);
+}
+
+.get_fav_div > h4 {
+    margin: 30px 15px 0 15px;
+    padding: 5px 0 50px 0;
+    font-weight: 600;
+    letter-spacing: -0.16px;
+    font-size: 28px;
+}
+
+.price_div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.price_div > p {
+    padding: 0 15px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.custome_div {
+    background-color: rgb(212,233,226);
+}
+
+.star {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb( 203, 162, 88);
+}
