@@ -12,159 +12,36 @@
 </head>
 
 <body>
-    <div class="container-1">
-        <nav class="navbar">
-            <div>
-                <ul class="navbar-1">
-                    <li><a href="#"><span class="material-icons">stars</span></a></li>
-                    <li class="nav_hover"><a href="#">MENU</a></li>
-                    <li class="active nav_hover"><a href="#">REWARDS</a></li>
-                    <li class="nav_hover"><a href="#">GIFT CARDS</a></li>
-                </ul>
-            </div>
-            <div class="navbar-2">
-                <a class="find_a_store" href="#"><span class="material-icons">location_on</span>Find a store</a>
-                <button class="sign_in_btn">Sign in</button>
-                <button class="join_now_btn-1">Join now</button>
-            </div>
-        </nav>
-        <div class="starbuck_rewards_div">STARBUCKS REWARDS</div>
-        <div>
-            <img class="hero_image" src="images/hero_image.jpg" alt="hero_image">
-            <div class="text_on_hero_image">
-                <div>
-                    <h2 class="hero_img_heading">Free coffee <br> is a tap away</h2>
-                    <p>Join now to start earning rewards</p>
-                </div>
-                <div>
-                    <button class="join_now_btn-2">Join now</button>
-                </div>
-                <div>
-                    <p class="para_of_join_app">Or <a href="#">join in the app</a> for the best experience</p>
-                </div>
-            </div>
-        </div>
+    <div id="container1">
+        <ul>
+            <li id="starbuckslogo"><img src="data:image/png;base64,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"></li>
+            <li id="elehover"><a href="#">MENU</a></li>
+            <li id="elehover"><a class="active" href="#">REWARDS</a></li>
+            <li id="elehover"><a href="#">GIFT CARDS</a></li>
+            <li style="float: right;"><a href="#"><button id="joinnow">Join now</button></a></li>
+            <li style="float: right; justify-content: center;"><a href="#"><button id="signin">Sign in</button></a></li>   
+            <li id="elehover" style="float: right;margin: 0 0px;"><a href="#"><img src="https://img.icons8.com/material-outlined/24/000000/marker.png"/>Find a store</a></li>
+        </ul>
     </div>
-    <div class="container-2">
-        <div class="getting_started_div">
-            <h3>Getting started is easy</h3>
-            <p>Earn Stars and get rewarded in few easy steps</p>
-        </div>
-        <div class="steps_div">
-            <div class="step_1_div">
-                <img class="number_img" src="images/number-one-in-a-circle.png" alt="number 1">
-                <h4>Create an account</h4>
-                <p>To get started, <a class="blue_link" href="#">join now</a>. You can also <a class="blue_link" href="#">join in the app</a> to get access
-                     to the full range of Starbucks®
-                    Rewards benefits.</p>
-            </div>
-            <div class="step_1_div">
-                <img class="number_img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/NumberTwoInCircle.svg" alt="number 2">
-                <h4>Order and pay how you’d like</h4>
-                <p>Use cash, credit/debit card or save some time and pay right through the app. 
-                    You’ll collect Stars all ways. <a class="blue_link" href="#">Learn how</a></p>
-            </div>
-            <div class="step_1_div">
-                <img class="number_img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/3NumberThreeInCircle.svg" alt="number 3">
-                <h4>Earn Stars, get Rewards</h4>
-                <p>As you earn Stars, you can redeem them for Rewards—like 
-                    free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
-            </div>
-        </div>
+    <div id="container2">
+        <h6>STARBUCKS REWARDS</h6>
     </div>
-    <div>
-        <div>
-            <h3>Get your favorites for free</h3>
-            <div>
-                <p>25★</p>
-                <p>50★</p>
-                <p>150★</p>
-                <p>200★</p>
-                <p>400★</p>
-            </div>
-        </div>
-        <div>
-            <h3>Customize your drink</h3>
-            <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
-        </div>
+    <div class="content">
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr>
     </div>
-    <div>
-        <div>
-            <h3>Endless Extras</h3>
-            <p>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee</p>
-        </div>
-        <div>
-            <div>
-                <h4>Fun freebies</h4>
-                <p>Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <h4>Order & pay ahead</h4>
-                <p>Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <h4>Get to free faster</h4>
-                <p>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h3>Cash or card, you earn Stars</h3>
-            <p>No matter how you pay, you can earn Stars with your morning coffee. 
-                Those Stars add up to (really delicious) Rewards</p>
-        </div>
-        <div>
-            <div>
-                <h3>1★ per dollar</h3>
-                <p>Pay as you go</p>
-            </div>
-            <div>
-                <h3>Scan and pay separately</h3>
-                <p>Use cash or credit/debit card at the register.</p>
-            </div>
-            <div>
-                <h3>Save payment in the app</h3>
-                <p>Check-out faster by saving a credit/debit card or PayPal to your account. 
-                    You’ll be able to order ahead or scan and pay at the register in one step.</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h3>2★ per dollar</h3>
-                <p>Add funds in the app</p>
-            </div>
-            <div>
-                <h3>Preload</h3>
-                <p>To save time and earn Stars twice as fast,
-                     add money to your digital Starbucks Card using any payment option. 
-                     Scan and pay in one step or order ahead in the app.</p>
-            </div>
-            <div>
-                <h3>Register your gift card</h3>
-                <p>Then use it to pay through the app. 
-                    You can even consolidate balances from multiple cards in one place.</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h3>Up to 3★ per dollar</h3>
-                <p>With Starbucks® Rewards Visa® Card</p>
-            </div>
-            <div>
-                <h3>Earn Stars even faster</h3>
-                <p>Earn Stars on all purchases you make with our 
-                    <a href="#">credit card</a>
-                    opens in new window in and outside of Starbucks.
-                     Earn 1 Star per $1 when you digitally preload your Starbucks
-                      Card with your Starbucks® Rewards Visa® Card, and earn 2 Stars
-                       per $1 when you pay with that preloaded Starbucks Card.</p>
-            </div>
-        </div>
-    </div>
+    
+    <script src="script.js"></script>
+    <a href="https://icons8.com/icon/85049/location">Location icon by Icons8</a> <a href="https://icons8.com/icon/36633/starbucks">Starbucks icon by Icons8</a>
 </body>
 
 </html>
+

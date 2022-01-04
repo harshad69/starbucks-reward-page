@@ -8,173 +8,109 @@ body {
 
 @font-face {font-family: "SoDo Sans SemiBold"; src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot"); src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg"); }
 
-.container-1, .container-2 {
-    display: grid;
-    text-decoration: none;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#container1 {
     background-color: white;
-    padding: 44px;
-    position: sticky;
-    top: 0;
-}
-
-.navbar-1 {
-    list-style-type: none;  
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
-    color: black;
     margin: 0;
-    font-weight: 700!important;
 }
 
-.navbar-1 > li {
-    padding: 10px;
+#container2 {
+    margin: auto;
+    padding: 0;
+    background-color: #0087ca;
 }
-
-.nav_hover > a:hover {
-    color: rgb(5,78,89);
+#container2 h6 {
+    font-weight: bold;
+    padding: 5px 0 5px 100px;
+    margin: 0;
+    font-size: 15px;
 }
-
-.navbar-2 {
-    display: flex;
+div ul {
     list-style-type: none;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.navbar-2 > a {
-    text-decoration: none;
+div ul li {
+    float: left;
+}
+
+div ul li a {
     color: black;
-}
-
-li  a {
-    color: black;
     text-decoration: none;
-}
-
-.find_a_store {
-    padding: 0 30px;
+    padding: 30px 15px;
+    display: block;
     text-align: center;
 }
-
-.find_a_store:hover {
-    color: rgb(5,78,89);
-}
-
-.sign_in_btn {
-    margin: 0 20px;
-    border-radius: 20px;
-    padding: 8px 15px;
-    background-color: white;
-    border: 1.5px solid black;
-}
-
-.sign_in_btn:hover {
-    background-color: whitesmoke;
-}
-
-.join_now_btn-1 {
-    border-radius: 20px;
-    padding: 8px 15px;
-    background-color: black;
-    color: white;
-    border: 1px solid black;
-}
-
-.join_now_btn-1:hover {
-    background-color: rgb(56, 47, 47);
-}
-
-.active {
-    padding-top: 10px;
-    box-shadow: inset 0 -6px rgb(5,78,89);
-}
-
-.starbuck_rewards_div {
-    background-color: rgb(5,78,89);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 110px;
-}
-
-.hero_image {
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 80%;
+}
+.sticky + .content {
+    padding-top: 101px;
 }
 
-.text_on_hero_image {
+#starbuckslogo {
+    display: block;
+    padding: 11.5px 15px;
+    align-items: center;
+    justify-content: center;
+}
+#elehover {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+#elehover::before {
+    content: '';
     position: absolute;
-    top: 50%;
-    margin: 20px;
+    width: 100%;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    height: 3px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: #0087ca;
+    transform-origin: center;
+    transition: transform 0.2s ease-out;
+}
+
+li.active a::before, #elehover:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+
+#signin {
+    display: inline;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-width: 1px;
+}
+
+#signin:hover {
+    background-color: #0087ca;
     color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    border-color: #0087ca;
 }
 
-.hero_img_heading {
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.join_now_btn-2 {
-    border-radius: 30px;
+#joinnow {
+    display: inline;
+    border-radius: 20px;
     background-color: black;
     color: white;
-    padding: 10px 20px;
-    border: 1px solid black;
+    padding: 5px 15px;
+    border-width: 1px;
 }
 
-.para_of_join_app > a {
-    color: white;
-}
-
-.para_of_join_app > a:hover {
-text-decoration: none;
-}
-
-.getting_started_div {
-    /* padding-left: 30%; */
-    text-align: center;
-}
-
-.getting_started_div > h3 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.steps_div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 5%;
-}
-
-.number_img {
-    padding-left: 50%;
-    width: 30px;
-}
-
-.step_1_div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-}
-
-.blue_link {
-    color: rgb(41, 172, 172);
-}
-
-.blue_link:hover {
-    text-decoration: none;
+#joinnow:hover {
+    background-color: white;
+    color: black;
 }
