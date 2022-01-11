@@ -8,6 +8,7 @@ body {
 
 @font-face {font-family: "SoDo Sans SemiBold"; src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot"); src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg"); }
 
+/* navigation and header */
 #container1 {
     background-color: white;
     margin: 0;
@@ -16,7 +17,9 @@ body {
 #container2 {
     margin: auto;
     padding: 0;
-    background-color: #0087ca;
+    /* margin-top: 20px; */
+    background-color: rgb(0,34,47);
+    color: white;
 }
 #container2 h6 {
     font-weight: bold;
@@ -48,7 +51,7 @@ div ul li a {
     width: 100%;
 }
 .sticky + .content {
-    padding-top: 101px;
+    padding-top: 116px;
 }
 
 #starbuckslogo {
@@ -73,7 +76,7 @@ div ul li a {
     bottom: 0;
     left: 0;
     visibility: hidden;
-    background-color: #0087ca;
+    background-color: rgb(30, 146, 161);
     transform-origin: center;
     transition: transform 0.2s ease-out;
 }
@@ -96,9 +99,9 @@ li.active a::before, #elehover:hover::before {
 }
 
 #signin:hover {
-    background-color: #0087ca;
-    color: white;
-    border-color: #0087ca;
+    background-color: rgba(0,34,47,0.1);
+    color: black;
+    border-color: rgba(0,34,47,0.2);
 }
 
 #joinnow {
@@ -111,8 +114,8 @@ li.active a::before, #elehover:hover::before {
 }
 
 #joinnow:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(0, 0, 0,0.7);
+    color: white;
 }
 
 .container-3 {
@@ -156,4 +159,47 @@ li.active a::before, #elehover:hover::before {
     font-weight: 600;
     font-size: 16px;
     color: rgb( 203, 162, 88);
+}
+
+/* hero image */
+
+.hero_image {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/hero_image.jpg");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* hero text */
+
+.hero_text {
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+}
+
+/* hero header(free coffee) */
+#hero_text_header {
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* hero image join button */
+#hero_join_button {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 15px;
+    border-color: rgb(0,34,47);
+}
+
+#hero_join_button:hover {
+    background-color: rgba(0, 0, 0,0.5);
 }
