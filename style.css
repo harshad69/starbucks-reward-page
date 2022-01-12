@@ -203,3 +203,13 @@ li.active a::before, #elehover:hover::before {
 #hero_join_button:hover {
     background-color: rgba(0, 0, 0,0.5);
 }
+
+/* hero image join in the app */
+
+.join_app {
+    color: white;
+}
+
+.join_app:hover {
+    text-decoration: none;
+}
