@@ -177,8 +177,8 @@ li.active a::before, #elehover:hover::before {
     margin: 0;
     text-align: left;
     position: absolute;
-    top: 60%;
-    left: 200px;
+    top: 85%;
+    left: 230px;
     transform: translate(-50%, -50%);
     color: white;
     text-decoration: none;
@@ -189,14 +189,17 @@ li.active a::before, #elehover:hover::before {
     font-size: 36px;
     font-weight: 600;
     font-style: normal;
+    letter-spacing: -0.16px;
+    line-height: 46.44px;
 }
 
 /* hero image join button */
 #hero_join_button {
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 5px 15px;
+    padding: 8px 18px;
+    font-size: 16px;
     border-color: rgb(0,34,47);
 }
 
@@ -212,4 +215,13 @@ li.active a::before, #elehover:hover::before {
 
 .join_app:hover {
     text-decoration: none;
+}
+
+/* hero image para 1 */
+#hero_image_para {
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: -0.16px;
+    font-weight: 400;
+    font-family: 'SoDo Sans SemiBold';
 }
