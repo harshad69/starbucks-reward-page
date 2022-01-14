@@ -16,16 +16,18 @@ body {
 
 #container2 {
     margin: auto;
-    padding: 0;
+    padding: 10px;
     /* margin-top: 20px; */
     background-color: rgb(0,34,47);
     color: white;
 }
 #container2 h6 {
-    font-weight: bold;
-    padding: 5px 0 5px 100px;
+    font-weight: 700;
+    padding: 5px 0 5px 130px;
     margin: 0;
-    font-size: 15px;
+    letter-spacing: 1.4px;
+    line-height: 21px;
+    font-size: 14px;
 }
 div ul {
     list-style-type: none;
@@ -118,51 +120,7 @@ li.active a::before, #elehover:hover::before {
     color: white;
 }
 
-.container-3 {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.get_fav_div {
-    display: grid;
-    margin: 0;
-    text-align: center;
-    background-color: rgb(241,248,246);
-}
-
-.get_fav_div > h4 {
-    margin: 30px 15px 0 15px;
-    padding: 5px 0 50px 0;
-    font-weight: 600;
-    letter-spacing: -0.16px;
-    font-size: 28px;
-}
-
-.price_div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.price_div > p {
-    padding: 0 15px;
-    margin: 10px;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.custome_div {
-    background-color: rgb(212,233,226);
-}
-
-.star {
-    font-weight: 600;
-    font-size: 16px;
-    color: rgb( 203, 162, 88);
-}
-
 /* hero image */
-
 .hero_image {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/hero_image.jpg");
     height: 650px;
