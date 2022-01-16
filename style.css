@@ -56,12 +56,20 @@ div ul li a {
     padding-top: 116px;
 }
 
+/* starbucks logo */
 #starbuckslogo {
     display: block;
-    padding: 11.5px 15px;
+    padding: 16px 10px 16px 40px;
     align-items: center;
     justify-content: center;
 }
+
+/* starbucks logo image */
+#logo_img {
+    width: auto;
+    height: 60px;
+}
+
 #elehover {
     font-size: 15px;
     display: inline-block;
