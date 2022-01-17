@@ -75,13 +75,19 @@ div ul li a {
     display: inline-block;
     position: relative;
 }
+
+.margin_nav {
+    margin: 0;
+    padding: 40px 10px;
+}
+
 #elehover::before {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     -webkit-transform: scaleX(0);
-    height: 3px;
+    height: 6px;
     right: 0;
     bottom: 0;
     left: 0;
