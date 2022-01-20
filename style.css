@@ -21,13 +21,27 @@ body {
     background-color: rgb(0,34,47);
     color: white;
 }
+
+/* navbar flexbox */
 .flex_container {
     display: flex;
+    align-content: center;
 }
 
 .nav_padding {
     padding: 0 30px;
     margin: 0;
+}
+
+.nav_flex {
+    align-content: center;
+    justify-content: center;
+}
+
+.right_side {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 200px;
 }
 
 #container2 h6 {
