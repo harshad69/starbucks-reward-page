@@ -26,6 +26,8 @@ body {
 .flex_container {
     display: flex;
     align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_padding {
@@ -35,13 +37,23 @@ body {
 
 .nav_flex {
     align-content: center;
-    justify-content: center;
+}
+
+/* right side flex container of navbar */
+.flex_container_right_side {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: 650px;
 }
 
 .right_side {
     display: flex;
     justify-content: flex-end;
-    margin-left: 200px;
+    align-content: center;
+    /* margin-left: 350px; */
+    padding: 30px 0;
+    padding-left: 30px;
 }
 
 #container2 h6 {
@@ -127,7 +139,7 @@ li.active a::before, #elehover:hover::before {
     transform-origin: center;
 }
 
-
+/* navbar sign in button */
 #signin {
     display: inline;
     border-radius: 20px;
@@ -143,6 +155,7 @@ li.active a::before, #elehover:hover::before {
     border-color: rgba(0,34,47,0.2);
 }
 
+/* navbar join now button */
 #joinnow {
     display: inline;
     border-radius: 20px;
