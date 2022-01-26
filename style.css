@@ -8,6 +8,20 @@ body {
 
 @font-face {font-family: "SoDo Sans SemiBold"; src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot"); src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg"); }
 
+/* for flexbox */
+.flex {
+    display: flex;
+}
+
+.justity_start {
+    justify-content: flex-start;
+}
+
+.align_items {
+    align-items: center;
+}
+
+
 /* navigation and header */
 #container1 {
     background-color: white;
@@ -57,7 +71,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-    margin-left: 600px;
+    margin-left: 580px;
     text-decoration: none;
 }
 
@@ -164,7 +178,7 @@ li.active a::before, #elehover:hover::before {
     border-radius: 20px;
     background-color: white;
     color: black;
-    padding: 5px 15px;
+    padding: 7px 15px;
     border-width: 1px;
 }
 
@@ -180,7 +194,7 @@ li.active a::before, #elehover:hover::before {
     border-radius: 20px;
     background-color: black;
     color: white;
-    padding: 5px 15px;
+    padding: 7px 15px;
     border-width: 1px;
 }
 
@@ -192,7 +206,7 @@ li.active a::before, #elehover:hover::before {
 /* hero image */
 .hero_image {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/hero_image.jpg");
-    height: 650px;
+    height: 900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,11 +218,19 @@ li.active a::before, #elehover:hover::before {
     margin: 0;
     text-align: left;
     position: absolute;
-    top: 85%;
+    top:200px;
     left: 230px;
     transform: translate(-50%, -50%);
     color: white;
     text-decoration: none;
+}
+
+.padding_hero_text {
+ padding-top: 360px;   
+}
+
+.left_padding_HT {
+    padding-left: 30px;
 }
 
 /* hero header(free coffee) */
@@ -218,6 +240,7 @@ li.active a::before, #elehover:hover::before {
     font-style: normal;
     letter-spacing: -0.16px;
     line-height: 46.44px;
+    color: white;
 }
 
 /* hero image join button */
@@ -251,4 +274,5 @@ li.active a::before, #elehover:hover::before {
     letter-spacing: -0.16px;
     font-weight: 400;
     font-family: 'SoDo Sans SemiBold';
+    color: white;
 }
