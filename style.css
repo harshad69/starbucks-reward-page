@@ -21,6 +21,10 @@ body {
     align-items: center;
 }
 
+/* text center */
+.text_center {
+    text-align: center;
+}
 
 /* navigation and header */
 #container1 {
@@ -275,4 +279,14 @@ li.active a::before, #elehover:hover::before {
     font-weight: 400;
     font-family: 'SoDo Sans SemiBold';
     color: white;
+}
+
+/* getting started div */
+.getting_started_inner_div {
+    flex-direction: row;
+    margin: 0 65px;
+}
+
+.num_img {
+    height: 45px;
 }
