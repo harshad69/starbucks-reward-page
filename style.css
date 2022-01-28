@@ -21,6 +21,10 @@ body {
     align-items: center;
 }
 
+.flex_column {
+    flex-direction: column;
+}
+
 /* text center */
 .text_center {
     text-align: center;
@@ -287,6 +291,27 @@ li.active a::before, #elehover:hover::before {
     margin: 0 65px;
 }
 
+.gsd_main_div_margin {
+    margin-top: 140px;
+}
+
 .num_img {
     height: 45px;
+}
+
+.margin_gsd {
+    margin: 40px 70px;
+}
+
+.justify_num_gsd {
+    justify-content: center;
+    align-items: center;
+}
+
+.img_margin {
+    margin: 0 auto;
+}
+
+.para_div_padding {
+    padding: 0 30px;
 }
