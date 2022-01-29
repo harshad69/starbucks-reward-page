@@ -313,5 +313,26 @@ li.active a::before, #elehover:hover::before {
 }
 
 .para_div_padding {
-    padding: 0 30px;
+    padding: 0 35px;
+}
+
+.gsd_h2{
+    font-size: 28px;
+}
+
+.gsd_h3 {
+    font-size: 19px;
+}
+.gsd_para_font {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "SoDo Sans SemiBold"
+}
+
+.gsd_link {
+    color: rgb(25,118,210);
+}
+
+.gsd_link:hover {
+    text-decoration: none;
 }
