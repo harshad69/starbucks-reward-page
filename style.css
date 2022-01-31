@@ -336,3 +336,8 @@ li.active a::before, #elehover:hover::before {
 .gsd_link:hover {
     text-decoration: none;
 }
+
+/* get your fav for free */
+.gyf_imgs {
+    height: 60px;
+}
