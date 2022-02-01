@@ -339,5 +339,9 @@ li.active a::before, #elehover:hover::before {
 
 /* get your fav for free */
 .gyf_imgs {
-    height: 60px;
+    height: 80px;
+}
+
+.hide_div {
+    display: none;
 }
