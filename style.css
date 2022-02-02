@@ -25,6 +25,10 @@ body {
     flex-direction: column;
 }
 
+.flex_row {
+    flex-direction: row;
+}
+
 /* text center */
 .text_center {
     text-align: center;
@@ -345,3 +349,8 @@ li.active a::before, #elehover:hover::before {
 .hide_div {
     display: none;
 }
+
+.gyf_color {
+    background-color: rgb(190, 226, 216);
+}
+

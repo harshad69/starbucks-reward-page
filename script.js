@@ -13,16 +13,23 @@ function myFunction() {
 }
 
 // get your fav for free
-function switchVisible() {
-    if (document.getElementById('div1')) {
-
-        if (document.getElementById('div1').style.display == 'none') {
-            document.getElementById('div1').style.display = 'block';
-            document.getElementById('div2').style.display = 'none';
-        }
-        else {
-            document.getElementById('div1').style.display = 'none';
-            document.getElementById('div2').style.display = 'block';
+var divs = ["div1","div2","div3","div4","div5"];
+var visibleId = null;
+function show(id) {
+    if(visibleId !== id) {
+        visibleId = id;
+    } 
+    hide();
+}
+function hide() {
+    var div, i, id;
+    for(i = 0; i < divs.length; i++) {
+        id = divs[i];
+        div = document.getElementById(id);
+        if(visibleId === id) {
+        div.style.display = "block";
+        } else {
+        div.style.display = "none";
         }
     }
-}
+} 
