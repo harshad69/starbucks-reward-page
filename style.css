@@ -297,6 +297,7 @@ li.active a::before, #elehover:hover::before {
 
 .gsd_main_div_margin {
     margin-top: 140px;
+    margin-bottom: 0;
 }
 
 .num_img {
@@ -351,6 +352,17 @@ li.active a::before, #elehover:hover::before {
 }
 
 .gyf_color {
-    background-color: rgb(190, 226, 216);
+    background-color: rgb(215, 235, 229);
+}
+
+.gyf_header {
+    font-size: 28px;
+}
+
+.gyf_button {
+    color: black;
+    background-color: rgb(215, 235, 229);
+    border-color: rgb(215, 235, 229);
+    border-width: 0;
 }
 
