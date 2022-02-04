@@ -17,6 +17,10 @@ body {
     justify-content: flex-start;
 }
 
+.justify_center {
+    justify-content: center;
+}
+
 .align_items {
     align-items: center;
 }
@@ -344,7 +348,8 @@ li.active a::before, #elehover:hover::before {
 
 /* get your fav for free */
 .gyf_imgs {
-    height: 80px;
+    height: 200px;
+    border-radius: 200px;
 }
 
 .hide_div {
@@ -364,5 +369,13 @@ li.active a::before, #elehover:hover::before {
     background-color: rgb(215, 235, 229);
     border-color: rgb(215, 235, 229);
     border-width: 0;
+    font-size: 24px;
+    padding: 18px 30px;
 }
+
+.gyf_divs {
+    padding: 40px 0;
+    background-color: rgb(191, 227, 231);
+}
+
 
