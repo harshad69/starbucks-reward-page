@@ -395,10 +395,16 @@ li.active a::before, #elehover:hover::before {
     margin: 0 30px;
 }
 
-.end_ex_icons_div_margin {
-    margin: 0 50px;
+.end_ex_learn_more {
+    color: rgb(13, 160, 160);
+}
+
+.end_ex_learn_more:hover {
+    text-decoration: none;
 }
 
 .end_ex_para_font {
     font-size: 16px;
 }
+
+/* Cash or card, you earn Stars */
