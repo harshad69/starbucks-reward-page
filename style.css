@@ -33,6 +33,14 @@ body {
     flex-direction: row;
 }
 
+.margin0 {
+    margin: 0;
+}
+
+.padding0 {
+    padding: 0;
+}
+
 /* text center */
 .text_center {
     text-align: center;
@@ -408,3 +416,34 @@ li.active a::before, #elehover:hover::before {
 }
 
 /* Cash or card, you earn Stars */
+.cash_card_main_div {
+    background-color: rgba(172, 224, 224, 0.2);
+}
+
+.cash_card_header_div {
+    margin: 0 25% 30px 25%;
+    padding-bottom: 40px;
+}
+
+.cash_card_header_div h2 {
+    font-size: 28px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.cash_card_para {
+    font-size: 16px;
+    margin: 0;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    text-align: left;
+}
+
+.star_para {
+    font-size: 24px;
+    margin: 0;
+}
+
+.first_div {
+    
+}
