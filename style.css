@@ -1,12 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'SoDo Sans SemiBold';
+    font-family: 'Montserrat', sans-serif;
 }
 
-@import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
-
-@font-face {font-family: "SoDo Sans SemiBold"; src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot"); src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg"); }
 
 /* for flexbox */
 .flex {
@@ -89,12 +86,19 @@ body {
     padding: 0;
 }
 
+.nav_flex ul {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+}
+
 /* right side flex container of navbar */
 .flex_container_right_side {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-    margin-left: 580px;
+    margin-left: 550px;
     text-decoration: none;
 }
 
@@ -160,7 +164,6 @@ div ul li a {
 }
 
 #elehover {
-    font-size: 15px;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -441,9 +444,15 @@ li.active a::before, #elehover:hover::before {
 
 .star_para {
     font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.16px;
     margin: 0;
 }
 
-.first_div {
-    
+.grid {
+    display: grid;
+    grid-template-columns:  1fr 2fr 2fr;
 }
+
+
