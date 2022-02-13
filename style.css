@@ -98,7 +98,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-    margin-left: 550px;
+    margin-left: 510px;
     text-decoration: none;
 }
 
@@ -115,7 +115,10 @@ body {
 #hover1 {
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.16px;
 }
 
 #hover1:hover {
@@ -204,8 +207,12 @@ li.active a::before, #elehover:hover::before {
     border-radius: 20px;
     background-color: white;
     color: black;
-    padding: 7px 15px;
+    padding: 8px 17px;
     border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 16.8px;
 }
 
 #signin:hover {
@@ -220,7 +227,7 @@ li.active a::before, #elehover:hover::before {
     border-radius: 20px;
     background-color: black;
     color: white;
-    padding: 7px 15px;
+    padding: 8px 17px;
     border-width: 1px;
 }
 
@@ -299,7 +306,6 @@ li.active a::before, #elehover:hover::before {
     line-height: 28px;
     letter-spacing: -0.16px;
     font-weight: 400;
-    font-family: 'SoDo Sans SemiBold';
     color: white;
 }
 
@@ -345,7 +351,6 @@ li.active a::before, #elehover:hover::before {
 .gsd_para_font {
     font-size: 16px;
     font-weight: 400;
-    font-family: "SoDo Sans SemiBold"
 }
 
 .gsd_link {
@@ -431,7 +436,7 @@ li.active a::before, #elehover:hover::before {
 .cash_card_header_div h2 {
     font-size: 28px;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .cash_card_para {
@@ -439,6 +444,7 @@ li.active a::before, #elehover:hover::before {
     margin: 0;
     line-height: 24px;
     letter-spacing: -0.16px;
+    font-weight: 400;
     text-align: left;
 }
 
@@ -455,4 +461,48 @@ li.active a::before, #elehover:hover::before {
     grid-template-columns:  1fr 2fr 2fr;
 }
 
+.star {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28.5px;
+}
 
+.first_div {
+    width: 77%;
+}
+
+.second_div {
+    width: 74%;
+}
+
+.third_div {
+    width: 77%;
+}
+
+.cash_card_h3 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28.5px;
+    letter-spacing: -0.16px;
+}
+
+.padding_left {
+    padding-left: 15px;
+}
+
+.hr {
+    margin: 24px 0 48px 0;
+}
+
+/* all links at the end */
+.all-links {
+    font-size: 15px;
+    color: rgb(13, 160, 160);
+    padding: 0 20px;
+}
+
+.all-links:hover {
+    text-decoration: none;
+}
