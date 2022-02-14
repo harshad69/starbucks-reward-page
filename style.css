@@ -2,8 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+div {
+    display: block;
+}
 
 /* for flexbox */
 .flex {
@@ -22,12 +33,29 @@ body {
     align-items: center;
 }
 
+.align_content {
+    align-content: center;
+}
+
 .flex_column {
     flex-direction: column;
 }
 
 .flex_row {
     flex-direction: row;
+}
+
+.flex_grow1 {
+    flex-grow: 1;
+}
+
+.flex_shrink_none {
+    flex-shrink: none!important;
+}
+
+/* basic */
+.block {
+    display: block!important;
 }
 
 .margin0 {
@@ -38,7 +66,6 @@ body {
     padding: 0;
 }
 
-/* text center */
 .text_center {
     text-align: center;
 }
@@ -66,31 +93,53 @@ body {
     font-size: 14px;
 }
 
-/* navbar flexbox */
-.flex_container {
-    display: flex;
-    align-content: center;
-    margin: 0;
-    padding: 0;
+/* menu rewards giftcard */
+.mrg_li {
+    display: inline-block;
+    padding-left: 2.4rem;
 }
 
-.nav_padding {
-    padding: 0 30px;
-    margin: 0;
+.mrg_li:first-of-type {
+    padding-left: 0;
 }
 
-.nav_flex {
-    align-content: center;
-    display: block;
-    margin-left: 10px;
-    padding: 0;
-}
-
-.nav_flex ul {
-    font-size: 14px;
+.mrg_text {
     font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 1.4px;
+}
+
+#elehover {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.margin_nav {
+    margin: 0;
+    padding: 40px 0;
+}
+
+#elehover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    height: 6px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: rgb(30, 146, 161);
+    transform-origin: center;
+    transition: transform 0.2s ease-out;
+}
+
+li.active a::before, #elehover:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transform-origin: center;
 }
 
 /* right side flex container of navbar */
@@ -162,44 +211,10 @@ div ul li a {
 
 /* starbucks logo image */
 #logo_img {
-    width: auto;
-    height: 60px;
-}
-
-#elehover {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: black;
-}
-
-.margin_nav {
-    margin: 0;
-    padding: 40px 10px;
-}
-
-#elehover::before {
-    content: '';
-    position: absolute;
     width: 100%;
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    height: 6px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    background-color: rgb(30, 146, 161);
-    transform-origin: center;
-    transition: transform 0.2s ease-out;
+    height: 100%;
 }
 
-li.active a::before, #elehover:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    transform-origin: center;
-}
 
 /* navbar sign in button */
 #signin {
@@ -506,3 +521,29 @@ li.active a::before, #elehover:hover::before {
 .all-links:hover {
     text-decoration: none;
 }
+
+/* for 1024px screen */
+@media (min-width: 1024px) {
+
+    /* header */
+    .header_nav_padding {
+        padding: 0 4rem;
+    }
+
+    .logo_margin_right {
+        margin-right: 4rem!important;
+    }
+
+}
+
+/* for 768px screen */
+@media (min-width: 768px) {
+
+    /* main logo */
+    .logo_WH {
+        height: 51px;
+        width: 51px;
+    }
+
+}
+
