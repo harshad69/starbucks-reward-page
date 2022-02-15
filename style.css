@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
+    letter-spacing: -0.1em;
+    line-height: 1.5;
 }
 
 html {
@@ -12,7 +14,7 @@ html {
     height: 100%;
 }
 
-div {
+div, header, nav {
     display: block;
 }
 
@@ -30,7 +32,7 @@ div {
 }
 
 .align_items {
-    align-items: center;
+    align-items: center!important;
 }
 
 .align_content {
@@ -50,7 +52,7 @@ div {
 }
 
 .flex_shrink_none {
-    flex-shrink: none!important;
+    flex-shrink: 0!important;
 }
 
 /* basic */
@@ -68,6 +70,18 @@ div {
 
 .text_center {
     text-align: center;
+}
+
+.zIndexNav {
+    z-index: 1;
+}
+
+.textUpper {
+    letter-spacing: .01em!important;
+}
+
+.inline_block {
+    display: inline-block!important;
 }
 
 /* navigation and header */
@@ -95,7 +109,6 @@ div {
 
 /* menu rewards giftcard */
 .mrg_li {
-    display: inline-block;
     padding-left: 2.4rem;
 }
 
@@ -143,22 +156,22 @@ li.active a::before, #elehover:hover::before {
 }
 
 /* right side flex container of navbar */
-.flex_container_right_side {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin-left: 510px;
-    text-decoration: none;
+.ml_auto {
+    margin-left: auto!important;
 }
 
-.right_side {
+.rsn_fontSize {
+    font-size: 1.4rem;
+}
+
+/* .right_side {
     display: flex;
     justify-content: flex-end;
     align-content: center;
     padding: 30px 0;
     padding-left: 30px;
     text-decoration: none;
-}
+} */
 
 /* hover */
 #hover1 {
@@ -529,20 +542,36 @@ div ul li a {
     .header_nav_padding {
         padding: 0 4rem;
     }
-
-    .logo_margin_right {
-        margin-right: 4rem!important;
+        
+    .posFixed1024 {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
     }
-
+    
+    
 }
 
 /* for 768px screen */
 @media (min-width: 768px) {
-
+    
     /* main logo */
+    .header_nav_padding {
+        padding: 0 2.4rem;
+    }
+
     .logo_WH {
         height: 51px;
         width: 51px;
+    }
+    
+    .logo_margin_right768 {
+        margin-right: 2.4rem!important;
+    }
+
+    .textMRCsize {
+        font-size: 1.4rem!important;
     }
 
 }
