@@ -18,6 +18,12 @@ div, header, nav {
     display: block;
 }
 
+button {
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+}
+
 /* for flexbox */
 .flex {
     display: flex;
@@ -84,6 +90,22 @@ div, header, nav {
     display: inline-block!important;
 }
 
+.textSemiBold {
+    font-weight: 600!important;
+}
+
+.pr {
+    padding-right: 0.8rem!important;
+}
+
+.mr {
+    margin-right: 4rem!important;
+}
+
+.mr1 {
+    margin-right: 1.6rem!important;
+}
+
 /* navigation and header */
 #container1 {
     background-color: white;
@@ -132,28 +154,67 @@ div, header, nav {
     padding: 40px 0;
 }
 
-#elehover::before {
-    content: '';
+/* hover */
+li a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#16151b;
+    margin:0 15px;
+    font-size:16px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+  }
+  li a:before{
+    content:'';
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
     height: 6px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    background-color: rgb(30, 146, 161);
-    transform-origin: center;
-    transition: transform 0.2s ease-out;
-}
+    background:rgba(2,54,69,0.8);
+    top:95%;
+    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  }
+  li a:hover:before{
+    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  
+  }
+  @keyframes in{
+    0%{
+      width: 0;
+      left:0;
+      right:auto;
+    }
+    100%{
+      left:0;
+      right:auto;
+      width: 100%;
+    }
+  }
+  @keyframes out{
+    0%{
+      width:100%;
+      left: auto;
+      right: 0;
+    }
+    100%{
+      width: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+  @keyframes show{
+    0%{
+      opacity:0;
+      transform:translateY(-10px);
+    }
+    100%{
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
 
-li.active a::before, #elehover:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    transform-origin: center;
-}
 
 /* right side flex container of navbar */
 .ml_auto {
@@ -164,21 +225,11 @@ li.active a::before, #elehover:hover::before {
     font-size: 1.4rem;
 }
 
-/* .right_side {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    padding: 30px 0;
-    padding-left: 30px;
-    text-decoration: none;
-} */
-
 /* hover */
 #hover1 {
     color: black;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
     line-height: 21px;
     letter-spacing: -0.16px;
 }
@@ -230,39 +281,33 @@ div ul li a {
 
 
 /* navbar sign in button */
-#signin {
-    display: inline;
-    border-radius: 20px;
-    background-color: white;
-    color: black;
-    padding: 8px 17px;
+.button {
+    background: none;
+    border-radius: 50px;
+    border-style: solid;
     border-width: 1px;
-    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0;
-    line-height: 16.8px;
+    line-height: 1.2;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
-#signin:hover {
-    background-color: rgba(0,34,47,0.1);
-    color: black;
-    border-color: rgba(0,34,47,0.2);
-}
-
-/* navbar join now button */
-#joinnow {
-    display: inline;
-    border-radius: 20px;
+.button-black {
     background-color: black;
+    border-color: black;
     color: white;
-    padding: 8px 17px;
-    border-width: 1px;
 }
 
-#joinnow:hover {
-    background-color: rgba(0, 0, 0,0.7);
-    color: white;
+.hover2:hover {
+    background-color: rgba(172, 224, 224, 0.2);
 }
+
+.button-black:hover {
+    background-color: rgba(0, 0, 0,0.7);
+    border-color: rgba(0, 0, 0,0.7);
+}
+
 
 /* hero image */
 .hero_image {
@@ -538,11 +583,7 @@ div ul li a {
 /* for 1024px screen */
 @media (min-width: 1024px) {
 
-    /* header */
-    .header_nav_padding {
-        padding: 0 4rem;
-    }
-        
+    /* header */      
     .posFixed1024 {
         position: fixed;
         width: 100%;
