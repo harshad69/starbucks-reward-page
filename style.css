@@ -14,7 +14,7 @@ html {
     height: 100%;
 }
 
-div, header, nav {
+div, header, nav, main {
     display: block;
 }
 
@@ -106,14 +106,35 @@ button {
     margin-right: 1.6rem!important;
 }
 
-/* navigation and header */
+.height100 {
+    height: 100%!important;
+}
+
+.mainContianer {
+    height: 100%;
+}
+
 #container1 {
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
-#container2 {
+.main_pos {
+    position: relative;
+    z-index: 1;
+}
+
+.banner {
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    height: auto;
+}
+
+
+
+/* #container2 {
     margin: auto;
     padding: 10px;
     background-color: rgb(0,34,47);
@@ -127,7 +148,7 @@ button {
     letter-spacing: 1.4px;
     line-height: 21px;
     font-size: 14px;
-}
+} */
 
 /* menu rewards giftcard */
 .mrg_li {
@@ -171,9 +192,9 @@ li a{
     content:'';
     position: absolute;
     width: 100%;
-    height: 6px;
+    height: 8px;
     background:rgba(2,54,69,0.8);
-    top:95%;
+    top:93%;
     animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   }
   li a:hover:before{
@@ -256,22 +277,6 @@ div ul li a {
     display: block;
     text-align: center;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 116px;
-}
-
-/* starbucks logo */
-#starbuckslogo {
-    display: block;
-    padding: 16px 10px 16px 40px;
-    align-items: center;
-    justify-content: center;
-}
 
 /* starbucks logo image */
 #logo_img {
@@ -280,7 +285,7 @@ div ul li a {
 }
 
 
-/* navbar sign in button */
+/* buttons */
 .button {
     background: none;
     border-radius: 50px;
@@ -590,7 +595,14 @@ div ul li a {
         left: 0;
         top: 0;
     }
+
+    .globalNavPadding {
+        padding-top: 99px;
+    }
     
+    .banner {
+        top: 99px;
+    }
     
 }
 
@@ -601,7 +613,7 @@ div ul li a {
     .header_nav_padding {
         padding: 0 2.4rem;
     }
-
+    
     .logo_WH {
         height: 51px;
         width: 51px;
@@ -610,10 +622,11 @@ div ul li a {
     .logo_margin_right768 {
         margin-right: 2.4rem!important;
     }
-
+    
     .textMRCsize {
         font-size: 1.4rem!important;
     }
+    
 
 }
 
