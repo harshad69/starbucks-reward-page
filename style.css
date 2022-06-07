@@ -130,8 +130,17 @@ button {
     position: sticky;
     z-index: 3;
     height: auto;
+    background-color: rgb(187,222,251);
+    color: rgb(25,118,210);
+    padding: 1.4rem;
 }
 
+h6 {
+    margin: 0;
+    padding-left: 10rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.07rem;
+}
 
 
 /* #container2 {
@@ -318,6 +327,7 @@ div ul li a {
 .hero_image {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/hero_image.jpg");
     height: 900px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -576,7 +586,7 @@ div ul li a {
 
 /* all links at the end */
 .all-links {
-    font-size: 15px;
+    font-size: 12px;
     color: rgb(13, 160, 160);
     padding: 0 20px;
 }
@@ -585,8 +595,12 @@ div ul li a {
     text-decoration: none;
 }
 
+.nav-menu-mobile {
+    display: none;
+}
+
 /* for 1024px screen */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 
     /* header */      
     .posFixed1024 {
@@ -603,11 +617,19 @@ div ul li a {
     .banner {
         top: 99px;
     }
+
+    .header_nav_padding {
+        padding: 0 3.4rem;
+    }
+
+    .mrg_li:first-of-type {
+        margin-left: 2rem;
+    }
     
 }
 
 /* for 768px screen */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     
     /* main logo */
     .header_nav_padding {
@@ -617,14 +639,24 @@ div ul li a {
     .logo_WH {
         height: 51px;
         width: 51px;
+        padding: 1rem 0;
     }
     
     .logo_margin_right768 {
-        margin-right: 2.4rem!important;
+        margin-right: 5.4rem!important;
     }
     
     .textMRCsize {
         font-size: 1.4rem!important;
+    }
+
+    .hero_image {
+        width: 100%;
+    }
+
+    .display_none {
+        display: none;
+        /* visibility: hidden; */
     }
     
 
